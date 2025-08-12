@@ -1,0 +1,428 @@
+{
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.ipynb": "jupyter-notebook",
+        "*.pyd": "default",
+        "{git,gitlens}:/**/*.{md,csv}": "default",
+        "*.md": "default",
+        "*.csv": "gc-excelviewer-csv-editor",
+        "*.pdf": "pdf.preview",
+        "{git,gitlens,git-graph}:/**/*.{md,csv,svg}": "default",
+        "{git,gitlens}:/**/*.{md,csv,svg}": "default",
+        "*.png": "imagePreview.previewEditor",
+        "*.xlsx": "gc-excelviewer-excel-editor",
+        "*.gz": "default",
+        "*.sql": "default",
+        "*.pptx": "default"
+    },
+    "latex-workshop.view.pdf.viewer": "tab",
+    "workbench.editor.decorations.colors": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "C_Cpp.vcFormat.space.beforeComma": true,
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.external.windowsExec": "C:/Program Files/PowerShell/7/pwsh.exe",
+    "vscode-office.openOutline": false,
+    "jupyter.askForKernelRestart": false,
+    "debug.onTaskErrors": "showErrors",
+    "C_Cpp.default.compilerPath": "cl.exe",
+    "editor.fontFamily": "'Fira Code iScript','Monaspace Neon Var ExtraLight','SpaceMono Nerd Font','FantasqueSansM Nerd Font Mono','Source Code Pro Medium'",
+    "editor.fontLigatures": true,
+    "latex-workshop.mathpreviewpanel.editorGroup": "current",
+    "latex-workshop.mathpreviewpanel.cursor.enabled": true,
+    "latex-workshop.latex.autoBuild.run": "never",
+    "git.suggestSmartCommit": false,
+    "python.autoComplete.extraPaths": [],
+    "python.experiments.enabled": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    },
+    "python.languageServer": "Pylance",
+    "python.analysis.extraPaths": [],
+    "errorLens.enabledDiagnosticLevels": ["error", "warning", "info", "hint"],
+    "discord.lowerDetailsNoWorkspaceFound": "Hi! I'm busy :)",
+    "discord.lowerDetailsIdling": "Hi! I'm busy :)",
+    "discord.lowerDetailsEditing": "Hello World! I'm on line {current_line}.",
+    "discord.lowerDetailsDebugging": "Hi! I'm busy :)",
+    "editor.stickyScroll.enabled": true,
+    "code-runner.runInTerminal": true,
+    "C_Cpp.default.includePath": ["C:\\root_v6.26.06\\include"],
+    "C_Cpp.default.cppStandard": "c++20",
+    "editor.quickSuggestionsDelay": 5,
+    "discord.detailsDebugging": "Smacking my head bc of {file_name} at line {current_line}.",
+    "redhat.telemetry.enabled": true,
+    "umath.preview.position": "top",
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "zig": "zig run",
+        "cpp": "cd $dir && g++ -std=c++20 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runghc",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "sml": "cd $dir && sml $fileName"
+    },
+    "remote.SSH.remotePlatform": {
+        "mimi.cs.mcgill.ca": "linux",
+        "CHIME": "linux",
+        "cedar.computecanada.ca": "linux"
+    },
+    "remote.SSH.useLocalServer": false,
+    "umath.preview.customCSS": [],
+    "umath.preview.macros": [
+        "\\newenvironment{mathzone}{\\begin{equation*}\\begin{gathered}}{\\end{gathered}\\end{equation*}}"
+    ],
+    "java.test.config": {},
+    "debug.toolBarLocation": "commandCenter",
+    "workbench.sideBar.location": "right",
+    "git.openRepositoryInParentFolders": "always",
+    "git.ignoredRepositories": [
+        "c:\\Users\\chloe\\.vscode\\extensions\\stepsize.stepsize-1.0.15\\resources\\demo-repository"
+    ],
+    "python.createEnvironment.trigger": "off",
+    "githubPullRequests.createOnPublishBranch": "never",
+    "files.autoSaveDelay": 10000,
+    "files.autoSaveWhenNoErrors": true,
+    "files.autoSave": "afterDelay",
+    "[html]": {
+        "editor.defaultFormatter": "mohd-akram.vscode-html-format"
+    },
+    "vim.neovimUseConfigFile": true,
+    "remote.SSH.showLoginTerminal": true,
+    "workbench.panel.showLabels": false,
+    "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-20",
+    "csv-preview.lineNumbers": "ordinal",
+    "csv-preview.formatValues": "never",
+    "markdown.preview.fontFamily": "Figtree,-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
+    "editor.fontWeight": "300",
+    "editor.minimap.enabled": false,
+    "git.ignoreRebaseWarning": true,
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "todohighlight.keywords": [
+        {
+            "text": "TODO:",
+            "color": "#050505",
+            "backgroundColor": "#f6bd30",
+            "overviewRulerColor": "#f6bd30"
+        },
+        {
+            "text": "IN PROGRESS:",
+            "color": "#050505",
+            "backgroundColor": "#ffec30",
+            "overviewRulerColor": "#ffec30"
+        },
+        {
+            "text": "URGENT:",
+            "color": "white",
+            "backgroundColor": "#be2c29",
+            "overviewRulerColor": "#be2c29"
+        },
+        {
+            "text": "NOTE:",
+            "color": "#ffffff",
+            "backgroundColor": "#5b43bf",
+            "overviewRulerColor": "#5b43bf"
+        },
+        {
+            "text": "DONE:",
+            "color": "white",
+            "backgroundColor": "green",
+            "overviewRulerColor": "green"
+        }
+    ],
+    "todohighlight.defaultStyle": {
+        "cursor": "pointer",
+        "borderRadius": "2px",
+        "padding": "20px 20px"
+    },
+    "git.confirmSync": false,
+    "godotTools.editorPath.godot4": "c:\\Users\\chloe\\Downloads\\Godot_v4.3-stable_win64.exe\\Godot_v4.3-stable_win64.exe",
+    "terminal.integrated.fontFamily": "'SpaceMono Nerd Font','FantasqueSansM Nerd Font Mono'",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.fontSize": 13,
+    "liveshare.notebooks.allowGuestExecuteCells": true,
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "terminal.integrated.gpuAcceleration": "auto",
+    "window.titleBarStyle": "custom",
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    "projectManager.git.baseFolders": [
+        "C:/Users/chloe/Documents",
+        "C:/Users/chloe/Onedrive - McGill University"
+    ],
+    "projectManager.tags": [
+        "Personal",
+        "Work",
+        "School",
+        "Physics",
+        "Computer Science"
+    ],
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "chat.commandCenter.enabled": false,
+    "prettier.tabWidth": 4,
+    "liveServer.settings.donotVerifyTags": true,
+    "workbench.colorCustomizations": {
+        "tab.activeBorderTop": "#00000000"
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "umath.preview.CursorType": "blacktriangleright",
+    "diffEditor.codeLens": true,
+    "hediet.vscode-drawio.resizeImages": null,
+    "geminicodeassist.inlineSuggestions.enableAuto": true,
+    "cSpell.enabledSchemes": {
+        "vscode-notebook-cell": false
+    },
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Anaconda Prompt": {
+            "source": "PowerShell",
+            "args": [
+                "-NoExit",
+                "-NoProfile",
+                "C:\\Users\\chloe\\miniconda3\\shell\\condabin\\conda-hook.ps1"
+            ],
+            "icon": "smiley"
+        }
+    },
+    "git.autofetch": true,
+    "git.autofetchPeriod": 300,
+    "window.newWindowProfile": "Default",
+    "print.sourcecode.fontSize": "8pt",
+    "print.folder.fileNames": false,
+    "print.folder.include": [],
+    "print.folder.exclude": [
+        "{bin,obj,out}",
+        "node_modules",
+        "data",
+        "**/*.{bin,exe,dll,hex,pdb,pdf,pfx,png,jpg,gif,bmp,suo,design}"
+    ],
+    "print.folder.maxLines": 1200,
+    "print.folder.maxFiles": 30,
+    "print.folder.includeFileList": false,
+    "vim.enableNeovim": true,
+    "cSpell.userWords": ["Chloé", "Legué"],
+    "markdown-pdf.styles": [
+        "C:\\\\Users\\\\chloe\\\\OneDrive - McGill University\\\\markdown-pdf.css"
+    ],
+    "notebook.formatOnSave.enabled": true,
+    "notebook.defaultFormatter": "esbenp.prettier-vscode",
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[markdown]": {
+        "editor.formatOnSave": false
+    },
+    "remote.autoForwardPortsSource": "hybrid",
+    "[log]": {
+        "editor.largeFileOptimizations": false
+    },
+    "files.associations": {
+        "*.log.*": "log",
+        "*.log": "log"
+    },
+    "logFileHighlighter.customPatterns": [
+        {
+            "pattern": "debug",
+            "foreground": "#000000",
+            "background": "#7d8aff9b",
+            "patternFlags": "i",
+            "borderRadius": "3px"
+        },
+        {
+            "pattern": "warning",
+            "foreground": "#000000",
+            "background": "#ff7d7d",
+            "patternFlags": "i",
+            "fontWeight": "bold",
+            "borderRadius": "3px"
+        },
+        {
+            "pattern": "ERROR",
+            "foreground": "#000000",
+            "background": "#d61b1b",
+            "patternFlags": "s",
+            "fontWeight": "bold",
+            "borderRadius": "3px",
+            "highlightEntireLine": false
+        },
+        {
+            "pattern": "critical",
+            "foreground": "#000000",
+            "background": "#870000",
+            "patternFlags": "i",
+            "fontWeight": "bold",
+            "borderRadius": "3px",
+            "highlightEntireLine": false
+        },
+        {
+            "pattern": "starting",
+            "patternFlags": "i",
+            "foreground": "#000000",
+            "background": "#73cb26bb",
+            "highlightEntireLine": true,
+            "borderRadius": "3px",
+            "fontWeight": "bold"
+        }
+    ],
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "name": "comment",
+                "scope": ["comment", "string.quoted"],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "name": "comment",
+                "scope": ["punctuation.definition.comment"],
+                "settings": {
+                    "fontStyle": ""
+                }
+            },
+            {
+                "name": "Variable",
+                "scope": [
+                    "variable.language",
+                    "string.other.link.title.markdown",
+                    "variable.parameter.function-call"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "name": "Keyword Storage",
+                "scope": ["storage"], // variables let, const
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "name": "Entity",
+                "scope": ["entity.other.attribute-name", "entity.name.method"],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    },
+    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.colorTheme": "Wal",
+    "terminal.integrated.suggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "python": false
+    },
+    "discord.detailsIdling": "Brain crashed... reboot pending",
+    "discord.largeImageIdling": "Brain crashed... reboot pending",
+    "terminal.integrated.fontSize": 13,
+    "window.zoomLevel": -1
+}
