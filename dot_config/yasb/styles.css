@@ -1,0 +1,536 @@
+@import url("../../.cache/wal/colors.css");
+
+:root {
+    --font: "Outfit";
+    --icon: "JetBrainsMono NFP", monospace;
+    --radius: 6px;
+}
+
+* {
+    font-size: 11px;
+    font-weight: 400;
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+}
+
+.yasb-bar {
+    padding: 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.widget {
+    padding: 0 8px;
+    margin: 0 4px;
+    border-radius: var(--radius);
+}
+
+.icon {
+    font-family: var(--icon);
+    font-size: 18px;
+}
+
+.wallpapers-widget {
+    background-color: var(--color10);
+    padding: 0 6px 0 6px;
+}
+
+.wallpapers-widget .icon {
+    color: var(--color2);
+}
+
+.wallpapers-gallery-window {
+    background-color: var(--background);
+    border: 0;
+    margin: 0;
+}
+.wallpapers-gallery-buttons {
+    background-color: var(--background);
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding: 8px 0;
+    border-radius: var(--radius);
+    margin: 0 8px 8px 8px;
+    width: 600px;
+}
+.wallpapers-gallery-buttons:hover {
+    background-color: var(--cursor);
+}
+.wallpapers-gallery-image {
+    border: 4px solid transparent;
+    border-radius: var(--radius);
+}
+.wallpapers-gallery-image:hover {
+    border: 4px solid var(--color15);
+}
+.wallpapers-gallery-image.focused {
+    border: 4px solid var(--color7);
+}
+
+.win-btn {
+    background-color: var(--color1);
+}
+
+.win-btn .icon {
+    color: var(--color9);
+}
+
+.komorebi-active-layout {
+    background-color: var(--color6);
+    padding: 0 8px;
+    margin: 0 4px;
+    border-radius: var(--radius);
+}
+.komorebi-active-layout .label {
+    color: var(--color14);
+}
+
+.komorebi-layout-menu {
+    background-color: var(--color6);
+}
+.komorebi-layout-menu .menu-item {
+    padding: 8px 16px;
+    font-size: 12px;
+    color: var(--color14);
+    font-weight: 600;
+}
+.komorebi-layout-menu .menu-item-icon {
+    color: var(--color14);
+    font-size: 16px;
+}
+.komorebi-layout-menu .menu-item-text {
+    /* font-family: "Segoe UI"; */
+    padding-left: 4px;
+    font-size: 12px;
+}
+.komorebi-layout-menu .menu-item:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+.komorebi-layout-menu .separator {
+    max-height: 1px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.komorebi-workspaces {
+    background-color: var(--background);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 6px;
+    padding-left: 6px;
+}
+.komorebi-workspaces .offline-status {
+    color: var(--color1);
+    font-size: 12px;
+    padding: 0 4px;
+    font-weight: 600;
+}
+.komorebi-workspaces .ws-btn {
+    border: none;
+    background-color: var(--color1);
+    margin: 0px 4px;
+    padding: 0;
+    color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    height: 10px;
+    width: 10px;
+}
+
+.komorebi-workspaces .ws-btn.populated {
+    background-color: var(--color9);
+}
+.komorebi-workspaces .ws-btn.active {
+    color: rgba(149, 177, 255, 0);
+    background-color: var(--cursor);
+    width: 36px;
+    height: 10px;
+    border-radius: 4px;
+}
+
+.active-window-widget {
+    background-color: var(--color15);
+    padding: 0;
+}
+.active-window-widget .label {
+    color: var(--color15);
+    background-color: var(--background);
+    padding: 0 8px;
+    margin: 1px;
+    border-radius: var(--radius);
+}
+.active-window-widget .icon {
+    padding: 0 8px;
+    border: none;
+    margin: 0;
+    background-color: var(--color15);
+}
+
+.taskbar-widget {
+    background-color: var(--background);
+    padding: 0;
+}
+.taskbar-widget .app-icon {
+    padding: 0 8px;
+    border: none;
+    margin: 0;
+}
+
+.volume-widget {
+    background-color: var(--color5);
+    padding: 0;
+}
+.volume-widget .icon {
+    color: var(--color13);
+    padding: 0 6px;
+}
+.volume-widget .label {
+    background-color: var(--background);
+    color: var(--color5);
+    padding: 0 8px;
+    margin: 1px;
+    border-radius: var(--radius);
+}
+
+.volume-slider {
+    border: none;
+}
+
+.volume-slider::sub-page:horizontal {
+    background-color: var(--color13);
+    border-radius: 3px;
+}
+
+.volume-slider::groove:horizontal {
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 3px;
+}
+.volume-slider::handle {
+    background-color: var(--color13);
+    border-radius: 3px;
+    width: 7px;
+    height: 8px;
+}
+
+.audio-menu {
+    background-color: var(--color5);
+}
+.audio-container .device {
+    background-color: transparent;
+    border: none;
+    padding: 6px 8px 6px 4px;
+    margin: 2px 0;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.audio-container .device.selected {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.audio-container .device:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.battery-widget {
+    background-color: var(--color2);
+    padding: 0;
+}
+.battery-widget .icon {
+    color: var(--color10);
+    padding: 0 6px;
+}
+
+.battery-widget .label {
+    background-color: var(--background);
+    color: var(--color2);
+    padding: 0 8px;
+    margin: 1px;
+    border-radius: var(--radius);
+}
+
+.power-menu-widget {
+    background-color: var(--color11);
+    padding: 0;
+}
+
+.power-menu-widget .label {
+    color: var(--color3);
+    padding: 0 8px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: var(--icon);
+}
+
+/*POWER MENU POPUP*/
+.uptime {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: var(--color7);
+    font-weight: 600;
+}
+.power-menu-popup {
+    background-color: rgba(24, 24, 37, 0);
+    border-radius: var(--radius);
+}
+.power-menu-popup .button {
+    padding: 0;
+    width: 180px;
+    height: 230px;
+    border-radius: var(--radius);
+    background-color: var(--background);
+    color: var(--foreground);
+    border: 4px solid var(--color2);
+    margin: 0px;
+}
+.power-menu-popup .button:hover {
+    border: 4px solid var(--color10);
+}
+/*
+.power-menu-popup .button:hover .icon {
+    color: var(--color15);
+} */
+
+.power-menu-popup .button .label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color2);
+}
+.power-menu-popup .button .icon {
+    font-size: 64px;
+    align-content: center;
+    padding-top: 32px;
+    color: var(--color2);
+}
+.power-menu-popup .button.cancel .icon {
+    padding: 0;
+    margin: 0;
+}
+.power-menu-popup .button.cancel .label {
+    margin: 0;
+}
+
+.power-menu-popup .button.cancel {
+    height: 32px;
+    border-radius: var(--radius);
+    border: none;
+    background-color: var(--background);
+    border: 2px solid var(--background);
+}
+.power-menu-popup .button.cancel:hover {
+    border: 2px solid var(--color10);
+}
+
+.vscode-widget .widget-container .icon {
+    padding: 0 6px 0 6px;
+    color: var(--color11);
+    background-color: var(--color14);
+    border-radius: var(--radius);
+}
+
+.vscode-menu {
+    max-height: 500px;
+    min-width: 300px;
+}
+
+.vscode-menu .header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 13px;
+    font-weight: 400;
+    padding: 8px;
+    color: var(--color11);
+    background-color: rgba(17, 17, 27, 0.4);
+}
+
+.vscode-menu .contents {
+    background-color: rgba(17, 17, 27, 0.4);
+}
+
+.vscode-menu .contents .item {
+    min-height: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+}
+
+.vscode-menu .contents .item .title {
+    /* font-size: 12px; */
+    margin-right: 5px;
+}
+
+.vscode-menu .contents .item .modified-date {
+    font-size: 11px;
+    margin-right: 5px;
+    color: var(--color11);
+}
+
+.vscode-menu .contents .item .folder-icon {
+    font-size: 14px;
+    margin-left: 8px;
+    color: var(--color11);
+}
+
+.vscode-menu .contents .item .file-icon {
+    font-size: 16px;
+    margin-left: 8px;
+    color: var(--color12);
+}
+
+.vscode-menu .contents .item:hover {
+    background-color: var(--color0);
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+/*MEDIA WIDGET*/
+.media-menu {
+    background-color: var(--color4);
+    padding: 0;
+    margin: 0;
+    border-radius: var(--radius);
+}
+
+.media-widget {
+    padding: 0;
+    padding-right: 0px;
+    background-color: var(--color4);
+    border-radius: var(--radius);
+    padding-left: 2px;
+    margin: 0;
+    margin-right: 8px;
+}
+.media-widget .label {
+    padding: 0 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.media-widget .btn,
+.media-menu .btn {
+    color: var(--color12);
+    padding: 0 4px;
+    margin: 4px 0;
+    font-family: Segoe Fluent Icons;
+}
+
+.media-menu .btn:hover,
+.media-widget .btn:hover {
+    color: var(--cursor);
+}
+
+.media-menu .btn.play,
+.media-widget .btn.play {
+    background-color: var(--color12);
+    padding: 0 3px;
+    color: var(--color4);
+    border-radius: var(--radius);
+    font-size: 16px;
+}
+
+.media-menu .btn.disabled:hover,
+.media-menu .btn.disabled,
+.media-widget .btn.disabled:hover,
+.media-widget .btn.disabled {
+    color: var(--color12);
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.media-menu .progress-slider::groove {
+    /* background: transparent; */
+    height: 2px;
+    border-radius: 3px;
+    background: var(--color12);
+}
+
+.media-menu .progress-slider::groove:hover {
+    background: transparent;
+    height: 6px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.media-menu .progress-slider::sub-page {
+    background: var(--cursor);
+    border-radius: 3px;
+    height: 4px;
+}
+
+.media-menu .title,
+.media-menu .artist,
+.media-menu .source {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.media-menu .thumbnail {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    margin-right: 8px;
+}
+
+.media-menu .artist {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.media-menu .source {
+    /* font-size: 11px; */
+    font-weight: 400;
+    color: white;
+    padding: 2px;
+    border-radius: var(--radius);
+}
+.media-menu .source.zen {
+    background-color: black;
+    color: #ffffff;
+}
+.media-menu .source.spotify {
+    background-color: #199143;
+    color: #ffffff;
+}
+
+.systray {
+    background: var(--background);
+    border: None;
+    margin: 0;
+    padding: 0 4px;
+}
+
+.systray .unpinned-container {
+    /* background: var(--color6); */
+    border-radius: var(--radius);
+}
+
+.systray .pinned-container {
+    background: transparent;
+}
+
+.systray .pinned-container[forceshow="true"] {
+    background: red;
+}
+
+.systray .button {
+    border-radius: 4px;
+    padding: 2px 2px;
+}
+
+.systray .button:hover {
+    background: var(--color7);
+}
+
+.systray .button[dragging="true"] {
+    background: var(--color9);
+    border-color: var(--color10);
+}
+
+.systray .unpinned-visibility-btn {
+    border-radius: 4px;
+    height: 20px;
+    width: 16px;
+}
+
+/* .systray .unpinned-visibility-btn:checked {
+     background: var(--color6);
+} */
+
+.systray .unpinned-visibility-btn:hover {
+    background: var(--cursor);
+}

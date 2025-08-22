@@ -142,7 +142,7 @@
     "java.jdt.ls.java.home": "C:\\Program Files\\Java\\jdk-20",
     "csv-preview.lineNumbers": "ordinal",
     "csv-preview.formatValues": "never",
-    "markdown.preview.fontFamily": "Figtree,-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
+    "markdown.preview.fontFamily": "Figtree,Outfit,-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
     "editor.fontWeight": "300",
     "editor.minimap.enabled": false,
     "git.ignoreRebaseWarning": true,
@@ -419,10 +419,20 @@
         "plaintext": false,
         "markdown": false,
         "scminput": false,
-        "python": false
+        "python": true
     },
     "discord.detailsIdling": "Brain crashed... reboot pending",
     "discord.largeImageIdling": "Brain crashed... reboot pending",
     "terminal.integrated.fontSize": 13,
-    "window.zoomLevel": -1
+    "window.zoomLevel": -1,
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.block": "sameLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.function": "sameLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.lambda": "sameLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.namespace": "sameLine",
+    "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
+    "C_Cpp.formatting": "vcFormat"
 }
