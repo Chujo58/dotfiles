@@ -28,8 +28,8 @@ bars:
       height: 28
     widgets:
       left: ["komorebi_workspaces", "komorebi_active_layout", "media", "systray"]
-      center: ["active_window"]
-      right: ["taskbar", "volume", "battery", "power_menu"]
+      center: ["clock"]
+      right: ["taskbar", "active_window", "volume", "battery", "power_menu"]
 widgets:
   # language:
   #   type: "yasb.language.LanguageWidget"
@@ -48,7 +48,7 @@ widgets:
       label_no_window: ""
       label_icon: true
       label_icon_size: 14
-      max_length: 56
+      max_length: 20
       max_length_ellipsis: "..."
       monitor_exclusive: true
       callbacks:
@@ -107,11 +107,7 @@ widgets:
         processes: []
         titles: []
         classes: []
-      container_padding:
-        top: 0
-        left: 0
-        bottom: 0
-        right: 0
+      show_only_visible: true
   win_button:
     type: "yasb.custom.CustomWidget"
     options:
@@ -248,11 +244,11 @@ widgets:
       show_battery: false
       show_volume: false
       show_network: false
-      container_padding:
-          left: 0
-          top: 0
-          right: 0
-          bottom: 0
+      # container_padding:
+      #     left: 0
+      #     top: 0
+      #     right: 0
+      #     bottom: 0
 
   komorebi_active_layout:
     type: "komorebi.active_layout.ActiveLayoutWidget"
@@ -294,3 +290,44 @@ widgets:
       #   left: 8
       #   bottom: 0
       #   right: 8
+
+  clock:
+    type: "yasb.clock.ClockWidget"
+    options:
+      label: "<span>{icon}</span> {%H:%M}"
+      label_alt: "\uf017 {%y-%m-%d %H:%M:%S}"
+      locale: ""
+      update_interval: 1000
+      timezones: []
+      icons:
+        clock_01 : "\udb85\udc3f"
+        clock_02 : "\udb85\udc40"
+        clock_03 : "\udb85\udc41"
+        clock_04 : "\udb85\udc42"
+        clock_05 : "\udb85\udc43"
+        clock_06 : "\udb85\udc44"
+        clock_07 : "\udb85\udc45"
+        clock_08 : "\udb85\udc46"
+        clock_09 : "\udb85\udc47"
+        clock_10 : "\udb85\udc48"
+        clock_11 : "\udb85\udc49"
+        clock_12 : "\udb85\udc4a"
+        clock_16 : "SNACK TIME !"
+        clock_21 : "Zzz..."
+        clock_22 : "Zzz..."
+        clock_23 : "Zzz..."
+      calendar: 
+        blur: true
+        round_corners: true
+        round_corners_type: "normal"
+        border_color: "system"
+        alignment: "center"
+        direction: "down"
+        show_holidays: true
+        show_week_numbers: true
+        country_code: "CA"
+        holiday_color: "#FF6464"
+      callbacks:
+        on_left: "toggle_label"
+        on_middle: "do_nothing"
+        on_right: "toggle_calendar"

@@ -1,0 +1,7 @@
+!.gitignore
+*.log*
+*.backup
+dot_config/yasb/old_styles.css
+dot_config/yasb/test.ahk
+dot_config/yasb/temp.json
+dot_vscode
